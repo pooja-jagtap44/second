@@ -15,6 +15,8 @@
 
 		<app.runtime>4.3.0-20201013</app.runtime>
 		<mule.maven.plugin.version>3.3.5</mule.maven.plugin.version>
+		<sonar.sources>src/main/mule</sonar.sources>
+        <sonar.tests/>
 	</properties>
 
 	<build>
@@ -100,6 +102,11 @@
             <groupId>org.apache.activemq</groupId>
             <artifactId>activemq-broker</artifactId>
             <version>5.16.0</version>
+        </dependency>
+        <dependency>
+             <groupId>org.sonarsource.scanner.maven</groupId>
+             <artifactId>sonar-maven-plugin</artifactId>
+             <version>3.6.1.1688</version>
         </dependency>
     </dependencies>
 
